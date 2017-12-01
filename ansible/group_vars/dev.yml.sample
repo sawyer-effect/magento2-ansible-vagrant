@@ -4,3 +4,7 @@ magento_account_private_key: YOUR_PRIVATE_KEY_HERE
 mysql_user: magento2
 mysql_password: magento2
 mysql_dbname: magento2
+magento2_admin_password: ADMIN_PASSWORD
+magento2_admin_email: ADMIN_EMAIL
+magento2_admin_firstname: ADMIN_NAME
+magento2_admin_lastname: ADMIN_LASTNAME

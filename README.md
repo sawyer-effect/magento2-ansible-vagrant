@@ -50,20 +50,22 @@ magento_account_private_key: YOUR_PRIVATE_KEY_HERE
 mysql_user: magento2
 mysql_password: magento2
 mysql_dbname: magento2
-magento2_language: en_US
-magento2_currency: USD
-magento2_admin_user: admin
-magento2_admin_password: admin2015
-magento2_admin_email: null@magento.com
-magento2_admin_firstname: John
-magento2_admin_lastname: Doe
-magento2_crypt_key: YOUR_CRYPT_KEY
-magento2_base_url: http://192.168.33.10
+magento2_admin_password: ADMIN_PASSWORD
+magento2_admin_email: ADMIN_EMAIL
+magento2_admin_firstname: ADMIN_NAME
+magento2_admin_lastname: ADMIN_LASTNAME
 ```
 
-### 3. Define a syncing strategy
+## Syncing
 
-See [syncing section](#syncing).
+By default, Magento2 files live in the box.
+
+It's up to you to configure your preferred sync solution. Here are some ideas:
+
+### External project
+
+You can find a commented out statement in Vagrantfile to sync from another project folder.
+
 
 ### 4. Up!
 
@@ -75,29 +77,3 @@ vagrant up
 
 Default base URL is: http://192.168.33.10
 
-## Syncing
-
-By default, Magento2 files live in the box.
-
-It's up to you to configure your preferred sync solution. Here are some ideas:
-
-#### NFS (host => guest)
-
-You can find a commented out statement in Vagrantfile.
-
-Example:
-
-```ruby
-  config.vm.synced_folder "../magento2", "/home/vagrant/repos/magento2",
-    type: 'nfs', mount_options: ['rw', 'async', 'fsc' ,'actimeo=2']
-```
-
-#### NFS (guest => host)
-
-See [vagrant-nfs_guest](https://github.com/Learnosity/vagrant-nfs_guest)
-
-#### Don't sync anything
-
-You could also use your text editor/IDE in the VM. You may want to install a GUI or play with X11 forwarding to do so.
-
-#### Rsync

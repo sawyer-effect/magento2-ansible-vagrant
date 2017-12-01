@@ -17,9 +17,8 @@ Vagrant.configure(2) do |config|
   # Ansible playbook
   config.vm.synced_folder ".", "/vagrant", type: 'virtualbox'
 
-  # Host -> Guest NFS
-  # config.vm.synced_folder "../magento2", "/home/vagrant/repos/magento2",
-  #  type: 'nfs', mount_options: ['rw', 'async', 'fsc' ,'actimeo=2']
+  # Magento site
+  # config.vm.synced_folder "../PROJECT_NAME/magento2", "/home/vagrant/repos/magento2"
 
   # Provisioning
   config.vm.provision "ansible_local" do |ansible|
