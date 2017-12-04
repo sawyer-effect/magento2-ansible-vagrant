@@ -56,15 +56,11 @@ magento2_admin_firstname: ADMIN_NAME
 magento2_admin_lastname: ADMIN_LASTNAME
 ```
 
-## Syncing
-
-By default, Magento2 files live in the box.
-
-It's up to you to configure your preferred sync solution. Here are some ideas:
-
 ### External project
 
-You can find a commented out statement in Vagrantfile to sync from another project folder.
+You can find a statement in Vagrantfile to copy magento folder from another project folder.
+
+If that line is removed, the provisioning will install magento in the VM.
 
 
 ### 4. Up!
