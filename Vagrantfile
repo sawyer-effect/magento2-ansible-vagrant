@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder ".", "/vagrant", type: 'virtualbox'
 
   # Magento site
-  # config.vm.synced_folder "../PROJECT_NAME/magento2", "/home/vagrant/repos/magento2"
+  config.vm.provision "file", source: "../pineda-covallin/magento2", destination: "/home/vagrant/repos/magento2"
 
   # Provisioning
   config.vm.provision "ansible_local" do |ansible|
