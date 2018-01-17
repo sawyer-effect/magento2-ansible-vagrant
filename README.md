@@ -30,7 +30,7 @@ As a result, Ansible do **not** need to be installed on the host.
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/cedricblondeau/magento2-ansible-vagrant
+git clone https://github.com/sawyer-effect/magento2-ansible-vagrant
 ```
 
 ### 2. Configure
@@ -56,6 +56,9 @@ magento2_admin_firstname: ADMIN_NAME
 magento2_admin_lastname: ADMIN_LASTNAME
 ```
 
+How generate public and private keys: http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html
+
+Admin values are the same of your Magento Marketplace Account.
 ### External project
 
 You can find a statement in Vagrantfile to copy magento folder from another project folder.
@@ -72,4 +75,3 @@ vagrant up
 ### 5. It's ready!
 
 Default base URL is: http://192.168.33.10
-
