@@ -74,6 +74,6 @@ vagrant up
 
 ### 5. It's ready!
 
-Add this entry in `/etc/hosts`: "192.168.33.10 dev.pinedacovalin.magemojo.io"
+Add this entry in `/etc/hosts`: "192.168.33.10 pinedacovalin.magemojo.io"
 
-You can visit the website in: http://dev.pinedacovalin.magemojo.io
+You can visit the website in: http://pinedacovalin.magemojo.io
