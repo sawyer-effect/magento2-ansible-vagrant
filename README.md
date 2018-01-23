@@ -74,4 +74,6 @@ vagrant up
 
 ### 5. It's ready!
 
-Default base URL is: http://192.168.33.10
+Add this entry in `/etc/hosts`: "192.168.33.10 dev.pinedacovalin.magemojo.io"
+
+You can visit the website in: http://dev.pinedacovalin.magemojo.io
