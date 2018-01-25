@@ -59,6 +59,7 @@ magento2_admin_lastname: ADMIN_LASTNAME
 How generate public and private keys: http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html
 
 Admin values are the same of your Magento Marketplace Account.
+
 ### External project
 
 You can find a statement in Vagrantfile to copy magento folder from another project folder.
@@ -71,6 +72,15 @@ If that line is removed, the provisioning will install magento in the VM.
 ```bash
 vagrant up
 ```
+
+#### Not quite there yet
+
+On the first run it will give you an error when doing the provision, follow this steps while we fix it:
+
+* Enter the VM with `vagrant ssh` and go to `/home/vagrant/repos/magento2` to run `componser install`
+* Get out of the VM and run `vagrant provision`
+* When provisioning is done run: `vagrant halt` and `vagrant start`
+* Have fun!
 
 ### 5. It's ready!
 
