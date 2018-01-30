@@ -73,15 +73,6 @@ If that line is removed, the provisioning will install magento in the VM.
 vagrant up
 ```
 
-#### Not quite there yet
-
-On the first run it will give you an error when doing the provision, follow this steps while we fix it:
-
-* Enter the VM with `vagrant ssh` and go to `/home/vagrant/repos/magento2` to run `componser install`
-* Get out of the VM and run `vagrant provision`
-* When provisioning is done run: `vagrant halt` and `vagrant start`
-* Have fun!
-
 ### 5. It's ready!
 
 Add this entry in `/etc/hosts`: "192.168.33.10 pinedacovalin.magemojo.io"
